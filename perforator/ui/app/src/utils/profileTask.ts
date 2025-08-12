@@ -47,10 +47,12 @@ export const startProfileTask = async (
     const flamegraphOptions: FlamegraphOptions = {
         MaxDepth: 256,
         MinWeight: 1e-10,
+        ShowLineNumbers: true,
     };
 
     const symbolizeOptions = {
         Symbolize: true,
+        ShowLineNumbers: true,
     };
 
     const maxProfiles = query.maxProfiles;
